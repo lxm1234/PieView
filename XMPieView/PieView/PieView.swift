@@ -189,9 +189,7 @@ class PieView: UIView {
             if i < self.segmentColorArr.count {
                 currentColor = self.segmentColorArr[i]
             }
-            radiusLayer.strokeColor = self.config.boardColor.cgColor
             radiusLayer.fillColor = currentColor.cgColor
-            radiusLayer.lineWidth = self.config.boardWidth
             pieShapeLayerArray.append(radiusLayer)
             backgroundLayer.addSublayer(radiusLayer)
         }
@@ -545,10 +543,6 @@ extension PieView {
          *  选中的index，不设置的话，没有选中的模块
          **/
         var selectionIndex: Int = 0
-        //边框大小
-        var boardWidth: CGFloat = 5
-        //边框颜色
-        var boardColor: UIColor = .white
     }
 }
 
