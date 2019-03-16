@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         chartView?.segmentColorArr = self.segmentColorArray
         //标题，若不传入，则为“其他”
         chartView?.segmentTitleArr = self.segmentTitleArray
-        chartView?.backgroundColor = UIColor.white
+        chartView?.backgroundColor = UIColor.init(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0)
         chartView?.clickBlock = {(index) in
             print("Click Index:\(index)")
         }
